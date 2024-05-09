@@ -1,48 +1,26 @@
-#Exercise 3.2.2
-#defination of variables
-vA = 5
-vB = 3
+#Spiel zum Lehrbuch - Python
+#2 Zahlen berechnen und das Ergebnis dem Programm mitteilen. Dieses prüft auf Richtigkeit
 
-#calculation
-vC = vA + vB
+#include
+import random
+random.seed()
 
-#output
-print(f"Die Aufgabe: {vA} + {vB}")
-print(f"Das Ergebnis: {vC}")
-print(f"Das Ergebnis ohne Speicherung: {vA + vB}")
-print(f"Eine weitere Berechnung: {(12 - 5 * 2) / 4}")
-#Exersice 3.2.2 - End
+#Var defination
+ranA = random.randint(1,10)
+ranB = random.randint(1,10)
 
-#Exercise 3.2.1
-#defination of variables
-vA = 5
-vB = 3
+#calc
+result = ranA + ranB
 
-#calculation
-vC = vA + vB
+#User communication
+print(f"Bitte berechnen Sie {ranA} + {ranB}",
+      "\nGeben Sie das Ergebnis hier ein: ")
+userResult = int(input())
 
-#output
-print("Die Aufgabe:", vA, "+", vB)
-print("Das Ergebnis:", vC)
-#Exersice 3.2.1 - End
+if userResult == result:
+      print(f"Das eingegebene Ergebnis {userResult} ist richtig!")
+else:
+      print(f"Das eingegebene Ergebnis {userResult} ist falsch!\n",
+            f"Das richtige Ergbebnis lautet: {result}")
 
-#main Datei Lehrbuch Übungen
-#Erste Ausgabe
-print("Hallo Welt!")
-#Erste Ausgabe - Ende
 
-##Übung 2.1.7
-vInch = 2.54
-print(5 * vInch, 
-      20 * vInch, 
-      92.7 * 2.54)
-##Übung 2.1.7 - Ende
-
-"""Mehrzeilige
-Kommentare
-3Anführungszeichen"""
-
-##Übung 2 - etsS
-#inhalt
-##Übung 2 - Ende
-#test für lens
